@@ -1,5 +1,5 @@
 #merge sort
-# O(nlogn) Time | O(nlogn) Space
+# O(nlogn) Time | O(n) Space
 arr= [7,6,4,3,1,2]
 def mergeSort(arr):
     if len(arr)==1:
