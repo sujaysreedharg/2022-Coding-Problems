@@ -12,7 +12,7 @@ def twoSum(array,target):
 print(twoSum([3,5,-4,8,11,1,-1,6],10))
 
 
-# O(n) Time | O(1) Space
+# O(nlogn) Time | O(1) Space
 
 def twoSum(array,target):
     array.sort()
