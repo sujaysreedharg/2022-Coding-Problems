@@ -12,11 +12,12 @@ class Solution:
                       
         currentLongest=[0,1]
         for i in range(len(s)):
-            odd=getPalin(i,i+1)
-            even=getPalin(i,i+2)
+            even=getPalin(i,i+1)
+            odd=getPalin(i,i+2)
             longest=max(odd,even,key= lambda s: s[1]-s[0])
             currentLongest=max(currentLongest,longest,key=lambda s: s[1]-s[0])
         return s[currentLongest[0]:currentLongest[1]]
+        
         
 
             
