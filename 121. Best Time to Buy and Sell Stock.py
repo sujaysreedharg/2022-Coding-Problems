@@ -12,3 +12,18 @@ class Solution:
                     l+=1
             r+=1
         return maxprofit
+
+    
+    #DP Kadane
+    
+    
+    class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        maxsofar=0
+        maxendinghere=0
+        for i in range(1,len(prices)):
+            maxendinghere=max(0,maxendinghere+prices[i]-prices[i-1])
+            maxsofar=max(maxendinghere,maxsofar)
+            
+        return maxsofar
+            
